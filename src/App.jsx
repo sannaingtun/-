@@ -1,6 +1,6 @@
 import './App.css';
 // import Order from './components/Order';
-// import Menu from './components/Menu';
+import Menu from './components/Menu';
 
 import React, { useEffect, useState } from 'react';
 
@@ -83,16 +83,10 @@ useEffect(()=>{
             </button>
             <span>{coffeeNum}</span>
           </div> */}
-          {/* <Menu menuname="Coffee 480円" count={coffeeNum}/> */}
-          <div className="menu-contents">
-            <button onClick={onCoffeeCountUp}>
-              Tee 280円
-            </button>
-            <span>{teeNum}</span>
-          </div>
+          {<Menu menuname="Coffee 480円" count={coffeeNum}/>}
           <div className="menu-contents">
             <button onClick={onTeeCountUp}>
-              Tee 280円
+              Tea 280円
             </button>
             <span>{teeNum}</span>
           </div>
