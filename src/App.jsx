@@ -6,7 +6,9 @@ import React, { useEffect, useState } from 'react';
 
 const App = () => {
   // coffee
-  const [coffeeNum, setcoffeeNum] = useState(0);
+  //const [coffeeNum, setcoffeeNum] = useState(0);
+  //Just add to avoid lint error
+  const coffeeNum = 0;
   // const coffeeValue = coffeeNum * 480;
 
   // tee
