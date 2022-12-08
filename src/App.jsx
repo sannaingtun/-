@@ -1,6 +1,6 @@
 import './App.css';
 // import Order from './components/Order';
-import Menu from './components/Menu';
+// import Menu from './components/Menu';
 
 import React, { useEffect, useState } from 'react';
 
@@ -69,7 +69,9 @@ useEffect(()=>{
   setSumAccount(coffeeValue + teeValue + milkValue + colaValue + beerValue);
 
   console.log(sumNum);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
 },[coffeeNum,teeNum ,milkNum ,colaNum ,beerNum])
+
 
   return (
     <React.Fragment>
@@ -81,7 +83,13 @@ useEffect(()=>{
             </button>
             <span>{coffeeNum}</span>
           </div> */}
-          <Menu menuname="Coffee 480円" count={coffeeNum}/>
+          {/* <Menu menuname="Coffee 480円" count={coffeeNum}/> */}
+          <div className="menu-contents">
+            <button onClick={onCoffeeCountUp}>
+              Tee 280円
+            </button>
+            <span>{teeNum}</span>
+          </div>
           <div className="menu-contents">
             <button onClick={onTeeCountUp}>
               Tea 280円
