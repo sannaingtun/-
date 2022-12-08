@@ -3,7 +3,7 @@ import "./Menu.css";
 const Menu = ({menuname, count}) => {
   return (
     <div className="menu-contents">
-            <button onClick={onCoffeeCountUp()}>
+            <button onClick={alert('Add click event here')}>
               {menuname}
             </button>
             <span>{count}</span>
