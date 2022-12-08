@@ -84,7 +84,7 @@ useEffect(()=>{
           <Menu menuname="Coffee 480円" count={coffeeNum}/>
           <div className="menu-contents">
             <button onClick={onTeeCountUp}>
-              Tee 280円
+              Tea 280円
             </button>
             <span>{teeNum}</span>
           </div>
